@@ -1,0 +1,84 @@
+/*清除样式*/
+*{
+    margin:0;
+    padding:0;
+}
+/*版心*/
+.w{
+    width:1120px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left:-560px;
+    opacity:0.8;
+}
+/*导航栏*/
+ul{
+    list-style: none;
+    line-height: 80px;
+}
+li{
+    float:left;
+    margin-right:20px;
+}
+li span{
+    color: rgb(246,159,46);
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+}
+a:hover{
+    color: green;
+}
+nav{
+            height: 80px;
+}
+.nav_login{
+    color: rgb(246,159,46);
+}
+.nav_search img{
+    position: relative;
+    vertical-align: -10px;
+    /*z-index: 10;*/
+}
+.nav_search input{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: -47px;
+    padding-left: 40px;
+    border-color: green;
+}
+
+
+/*尾部*/
+footer{
+    clear: both;
+    background-color: #333;
+    width:1120px;
+    height:100px;
+    margin: 0 auto;
+    color: #fff;
+
+}
+footer span{
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+footer .footer1{
+    padding-top: 20px;
+    padding-left: 24%;
+}
+footer a{
+    color: #fff;
+    padding-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer a:hover{
+    color: #007700;
+}
