@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face{
     font-family:myfont;
     src:url(../sansation/minijianyaya.ttf)}
@@ -179,3 +180,174 @@ footer a{
 footer a:hover{
     color: #007700;
 }
+=======
+* {
+	font-size: 16px;
+	/*color: #eee;*/
+	margin:0;
+    padding:0;
+}
+
+div {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #E6E6FA;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+ul {
+	list-style: none;
+}
+
+
+/*搜索框*/
+
+.search {
+	width: 243px;
+	height: 24px;
+	border: 2px solid #007700;
+	border-radius: 20px;
+	margin-top: 15px;
+	margin-left: 20px;
+	background-color: #40E0D0;
+	opacity: 0.6;
+}
+
+.SE {
+	margin: 0 auto;
+	width: 30px;
+	height: 24px;
+	float: left;
+	margin-left: 6px;
+}
+.tu{
+	width: 100%;
+	
+}
+.tu1{width: 100%;}
+
+/*导航栏*/
+
+.nav_cate {
+	background-color: #F5F5DC;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 300px;
+	left: 20px;
+	
+}
+
+.nav_cate li {
+	height: 45px;
+	width: 120px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: -2px 6px #FFFFF0;
+}
+
+.nav_cate li:hover{
+	background-color: #40E0D0;
+}
+/*探美食*/
+.food{
+	color: #BA55D3;
+	height: 100px;
+	line-height: 100px;
+}
+
+.fod {
+	width: 100%;
+	text-align: center;
+}
+
+.foode {
+	display: inline-block;
+	width: 1000px;
+	height: 362px;
+	
+}
+
+
+
+.img {
+	width: 232px;
+	height: 317px;
+	}
+
+
+
+
+
+
+
+.img-title{
+	color: #696969;
+position: relative;
+line-height: 30px;	
+width: 100%;
+top:-100px;
+left: -86px;
+text-align: left;
+background-color: #eeeee;
+}
+.title-food .img-title{
+    margin-top: -216px;
+	height: 260px;
+	width: 310px;
+margin-left: 86px;
+    background-color: rgba(255,255,255,0.1);
+}
+.title-food .img-title:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+
+
+
+	
+
+.img1 {
+	width: 310px;
+	height: 259px;
+	
+}
+
+.daohang {
+	position: relative;
+	top: -83px;
+	left: -45px;
+}
+
+.omelette {
+	width: 312px;
+	height: 258px;
+	float: left;
+	margin-left: 20px;
+	box-shadow: 0px 66px 6px #FFFFF0;
+}
+
+.more {
+	position: relative;
+	top: -37px;
+	left: -298px;
+}
+
+
+
+/*底部*/
+.
+.declarant{
+	height: 200px;
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+}
+>>>>>>> 1778ce813c69be42593b8360e0abf3bd97b4cdc4
