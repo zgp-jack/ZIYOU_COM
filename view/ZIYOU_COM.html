@@ -2,59 +2,390 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="自游吧"/>
+    <meta name="keywords" content="旅游网"/>
+    <meta name="keywords" content="旅游攻略"/>
+    <meta name="keywords" content="周末出游"/>
     <title>自游吧</title>
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/commen.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <script type="text/javascript" src="./js/search_pic_change.js"></script>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <div style="background-color:white;width:100%;height:80px;">
-        <nav class="w">
-        <ul>
-            <li>
-                <span>成都</span>
-                <img src="./images/nav_position.png" alt="定位图标">
+
+<!--登录和注册-->
+
+<!--导航栏-->
+<nav>
+    <ul>
+        <li class="nav_at"><span>成都</span>&nbsp;<img src="./images/nav_position.png" alt="定位"/></li>
+        <li class="nav_logo"><img src="./images/logo_black.png" alt="自游吧logo"/></li>
+        <li><a href="#" title="首页" style="color: #006600">首页</a></li>
+        <li><a href="destination.html" title="目的地">目的地</a></li>
+        <li><a href="#" title="攻略">攻略</a></li>
+        <li><a href="hotel.html" title="酒店">酒店</a></li>
+        <li><a href="travelnote.html" title="游记">自游记</a></li>
+        <li><a href="weektravel.html" title="周末游">周末游</a></li>
+        <li class="nav_search"><img src="./images/btn_search.png" alt="点击搜索"/><input type="text" placeholder="搜索目的地"/></li>
+        <li><a href="javascript:void()" class="nav_login">已登录</a></li>
+        <!-- <a href="login.html"  class="nav_login">登录&nbsp;|&nbsp;</a><a href="register.html"  class="nav_login">注册</a> -->
+    </ul>
+</nav>
+
+<!--头部-->
+<header class="index_head index_header">
+    <!--<img src="./images/header_lunbo.jpeg" alt="重庆旅游"/>-->
+    <video src="./images/index_video.mp4" autoplay loop="loop" width="100%"><img src="./images/header_lunbo.jpeg" alt="打不开视频文件"/></video>
+    <div class="header_title"><h1>做自己，享自由</h1>
+        <p class="headerindextitle">自游网，做最好的自己</p>
+    </div>
+    <div class="header_footer">今日有<b style="color: red">90</b>条游记更新</div>
+</header>
+
+<!--内容-->
+<section>
+    <article class="article1">
+        <h1 align="center"  class="article_title">热门推荐</h1>
+        <hr/>
+        <article class="section1_spot">
+            <span><img src="./images/popularpost_logo.png" alt="热门景点"/>&nbsp;&nbsp;&nbsp;<b style="font-size: 18px">热门景点</b></span>
+            <div class="fire-spot">
+                <ul class="spot">
+                    <li>
+                        <div class="spot_img">
+                            <img src="./images/index_port1.jpg" alt="苏州万鸟园"/>
+                        </div>
+                        <div class="spot_talk">
+                            <div class="spot_talk1"><span>100条推荐</span></div>
+                            <div class="spot_talk2"><span>再次见面，你好</span></div>
+                        </div>
+                        <div class="spot_explain">
+                            <div>
+                                <span><a href="#">重庆</a>|<a href="#">巴南</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="spot_img">
+                            <img src="./images/index_port2.jpg" alt="苏州万鸟园"/>
+                        </div>
+                        <div class="spot_talk">
+                            <div class="spot_talk1"><span>100条推荐</span></div>
+                            <div class="spot_talk2"><span>再次见面，你好</span></div>
+                        </div>
+                        <div class="spot_explain">
+                            <div>
+                                <span><a href="#">重庆</a>|<a href="#">巴南</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="spot_img">
+                            <img src="./images/index_port3.jpg" alt="苏州万鸟园"/>
+                        </div>
+                        <div class="spot_talk">
+                            <div class="spot_talk1"><span>100条推荐</span></div>
+                            <div class="spot_talk2"><span>再次见面，你好</span></div>
+                        </div>
+                        <div class="spot_explain">
+                            <div>
+                                <span><a href="#">重庆</a>|<a href="#">巴南</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+        <article class="article_right">
+            <h2>一元自由行</h2>
+            <article class="section1_zyxing">
+                <img src="./images/index_yiyuanziyouxing.jpg" alt="北京"/>
+                <div class="barrage">
+                    <marquee loop="-1" direction="up" scrollamount="5" height="50px">
+                        <p><mark style="color: red;background-color: rgba(255,255,255,0);">朱涛</mark>  &nbsp;5分钟前&nbsp;购买了 一元自由行</p>
+                        <hr/>
+                        <p><mark style="color: red;background-color: rgba(255,255,255,0)">刘红丹</mark>  &nbsp;11分钟前&nbsp;购买了 一元自由行</p>
+                        <hr/>
+                        <p><mark style="color: red;background-color: rgba(255,255,255,0);">刘华</mark>  &nbsp;10分钟前&nbsp;购买了 一元自由行</p>
+                        <hr/>
+                    </marquee>
+                </div>
+                <div class="zyxing_message">
+                    <span style="border: 1px solid #333">今日</span><span style="font-size: 20px">&nbsp;&nbsp;成都往返北京4或5天免税机票</span><br/>
+                    <p>(首次参与赠送50元代金券)</p>
+                    <div style="height: 40px">目标：<span style="color: red">3888</span><input type="button" value="一元试试" style="color: #fff;width: 180px;height:40px;margin-left: 10px;background-color: red"/></div>
+                    <br/>
+                    <span>已支持：<mark style="color: red;background-color: #fff">2479</mark></span><span style="float: right">完成进度：<mark style="color: red;background-color: #fff">69%</mark></span><br/>
+                    <img src="./images/index_ziyouxing.png" alt="进度条" style="width: 304px;height:4px;position: relative;top: 4px;left: 1px"/>
+                </div>
+            </article>
+            <article class="travelnote">
+                <div class="travelnote_header">
+                    <b style="font-size: 24px;color: #009900">精选游记</b>
+                    <span>最新发表</span>
+                    <span class="writenote">
+                        <a href="#">我要上首页</a>
+                        <span>写游记</span>
+                    </span>
+                </div>
+                <ul class="tra_note">
+                    <li class="note">
+                        <img src="./images/note1%20(1).jpeg" alt="油菜花"/>
+                        <div class="note1">
+                            <h2>【至美中国】水墨画卷 婺源散记</h2>
+                            <p>春天，是一个让人内心躁动的美丽季节。躁动了自然就应该有所行，但大片大片金黄的油菜花田、古老沧桑的徽派建</p>
+                            <img src="./images/note_like.jpg" alt="游览人数"/>
+                            <div class="noteliu">
+                                <span>by 田埂上的梦</span>
+                                <span>23067/186</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="note">
+                        <img src="./images/note1%20(2).jpeg" alt="油菜花"/>
+                        <div class="note1">
+                            <h2>【至美中国】水墨画卷 婺源散记</h2>
+                            <p>春天，是一个让人内心躁动的美丽季节。躁动了自然就应该有所行，但大片大片金黄的油菜花田、古老沧桑的徽派建</p>
+                            <img src="./images/note_like.jpg" alt="游览人数"/>
+                            <div class="noteliu">
+                                <span>by 田埂上的梦</span>
+                                <span>24367/186</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="note">
+                        <img src="./images/note1%20(3).jpeg" alt="油菜花"/>
+                        <div class="note1">
+                            <h2>【至美中国】水墨画卷 婺源散记</h2>
+                            <p>春天，是一个让人内心躁动的美丽季节。躁动了自然就应该有所行，但大片大片金黄的油菜花田、古老沧桑的徽派建</p>
+                            <img src="./images/note_like.jpg" alt="游览人数"/>
+                            <div class="noteliu">
+                                <span>by 田埂上的梦</span>
+                                <span>23067/186</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </article>
+    </article>
+
+
+    <!--目的地 攻略-->
+    <article class="destination"  style="padding-top: 30px">
+        <h1 align="center" class="article_title">目的地.攻略.查询</h1>
+        <hr/>
+        <div class="des_season pot">
+            <div class="spot_img">
+                <img src="./images/section_travel.gif" alt="重庆朝天门" width="400px" height="280px"/>
+            </div>
+            <div class="spot_talk">
+                <div class="spot_talk1"><span>10月去哪旅游最好...</span></div>
+                <div class="spot_talk2"><span>重庆  金秋10月</span></div>
+            </div>
+            <div class="spot_explain des_path">
+                <div>
+                        <span><a href="#">重庆</a>|<a href="#">巴南</a>
+                        </span>
+                    <p>重庆好  重庆棒棒哒</p>
+                </div>
+            </div>
+        </div>
+        <div class="des_season4">
+            <div class="des_season4_1">
+                <img src="./images/des_path4%20(1).jpg" alt="三亚"/>
+                <div class="img_txt">重庆
+                    <p class="img_txt1">武隆哈哈哈</p>
+                </div>
+            </div>
+
+            <div class="des_season4_1"><img src="./images/des_path4%20(2).jpg" alt="三亚"/>  <div class="img_txt">三亚<p class="img_txt1">武隆哈哈哈</p></div> </div>
+            <div class="des_season4_1"><img src="./images/des_path4%20(3).jpg" alt="广州"/>  <div class="img_txt">广州<p class="img_txt1">武隆哈哈哈</p></div> </div>
+            <div class="des_season4_1"><img src="./images/des_path4%20(4).jpg" alt="丽江"/>  <div class="img_txt">丽江<p class="img_txt1">武隆哈哈哈</p></div> </div>
+        </div>
+        <div class="des_table">
+            <table cellpadding="0" cellspacing="0" valign="center">
+                <tr align="center">
+                    <td style="border-bottom: 1px solid #ddd;border-right: 1px solid #ddd"><img src="./images/des_dong.jpg" alt="动车查询" id="change_pic1" class="changepic" onmouseover="changePic()" onmouseout="changePic2()"/><a href="#">动车查询</a></td>
+                    <td><img src="./images/des_buss.jpg" alt="动车查询" id="change_pic2" onmouseover="changePic21()" onmouseout="changePic22()"/><a href="#">火车查询</a></td>
+                    <td style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd"><img src="./images/des_car.jpg" alt="动车查询"  id="change_pic3" onmouseover="changePic31()" onmouseout="changePic32()"/><a href="#">专车查询</a></td>
+                </tr>
+                <tr align="center">
+                    <td><img src="./images/des_sun.jpg" alt="动车查询"  id="change_pic4" onmouseover="changePic41()" onmouseout="changePic42()"/><a href="#">天气查询</a></td>
+                    <td style="border: 1px solid #ddd;"><img src="./images/des_pos.jpg" alt="动车查询"  id="change_pic5" onmouseover="changePic51()" onmouseout="changePic52()"/><a href="#">地址查询</a></td>
+                    <td><img src="./images/des_drink.jpg" alt="动车查询"  id="change_pic6" onmouseover="changePic61()" onmouseout="changePic62()"/><a href="#">查询</a></td>
+                </tr>
+                <tr align="center">
+                    <td style="border-top: 1px solid #ddd;border-right: 1px solid #ddd"><img src="./images/des_car.jpg" alt="动车查询"  id="change_pic7" onmouseover="changePic71()" onmouseout="changePic72()"/><a href="#">公交查询</a></td>
+                    <td><img src="./images/des_lan.jpg" alt="动车查询"  id="change_pic8" onmouseover="changePic81()" onmouseout="changePic82()"/><a href="#">火车查询</a></td>
+                    <td style="border-top: 1px solid #ddd;border-left: 1px solid #ddd"><img src="./images/des_search.jpg" alt="动车查询"  id="change_pic9" onmouseover="changePic91()" onmouseout="changePic92()"/><a href="#">快捷搜索</a></td>
+                </tr>
+            </table>
+            <!--<script src="./js/pic_change.js"></script>-->
+        </div>
+    </article>
+
+    <!--周末行-->
+    <article class="weekTra" style="padding-top: 50px">
+        <h1 align="center"  class="article_title">周末游</h1>
+        <hr/>
+        <ul class="article_title3">
+            <li><div class="des_season pot">
+                <div class="spot_img">
+                    <img src="./images/weekTra%20(1).jpg" alt="重庆朝天门" width="400px" height="280px"/>
+                </div>
+                <div class="spot_talk">
+                    <h1>探美食</h1>
+                </div>
+                <div class="spot_explain des_path">
+                    <div>
+                            <span><a href="#">重庆</a>|<a href="#">巴南</a>
+                            </span>
+                        <p>重庆好  重庆棒棒哒</p>
+                    </div>
+                </div>
+                </div>
             </li>
-            <li class="nav_logo">
-                <img src="./images/logo_black.png" alt="自游吧logo"/>
+            <li><div class="des_season pot">
+                <div class="spot_img">
+                    <img src="./images/incity%20(3).jpg" alt="重庆朝天门" width="400px" height="280px"/>
+                </div>
+                <div class="spot_talk">
+                   <h1>城里逛</h1>
+                </div>
+                <div class="spot_explain des_path">
+                    <div>
+                            <span><a href="#">重庆</a>|<a href="#">巴南</a>
+                            </span>
+                        <p>重庆好  重庆棒棒哒</p>
+                    </div>
+                </div>
+            </div>
             </li>
-            <li>
-                <a href="./ZIYOU_COM.html" title="首页" style="color: #006600">首页</a>
-            </li>
-            <li>
-                <a href="destination.html" title="目的地">目的地</a>
-            </li>
-            <li>
-                <a href="hotel.html" title="酒店">酒店</a>
-            </li>
-            <li>
-                <a href="travelnote.html" title="游记">自游记</a>
-            </li>
-            <li>
-                <a href="weektravel.html" title="周末游">周末游</a>
-            </li>
-            <li class="nav_search">
-                <img src="./images/btn_search.png" alt="点击搜索"/>
-                <input type="text" placeholder="搜索目的地"/>
-            </li>
-            <li class="login">
-                <a href="login.html"  class="nav_login">登录&nbsp;|&nbsp;</a>
-                <a href="register.html"  class="nav_login">注册</a>
+            <li><div class="des_season pot">
+                <div class="spot_img">
+                    <img src="./images/weekTra%20(3).jpg" alt="重庆朝天门" width="400px" height="280px"/>
+                </div>
+                <div class="spot_talk spot_title">
+                   <h1>趣城外</h1>
+                </div>
+                <div class="spot_explain des_path">
+                    <div>
+                            <span><a href="#">重庆</a>|<a href="#">巴南</a>
+                            </span>
+                        <p>重庆好  重庆棒棒哒</p>
+                    </div>
+                </div>
+            </div>
             </li>
         </ul>
-        </nav>
-    </div>
+        <!--<div class="weekTra_food"></div>-->
+        <!--<div class="weekTra_incity"></div>-->
+        <!--<div class="weekTra_outcity"></div>-->
+        </article>
+    <!--主题酒店-->
+    <article class="hotel">
+        <!--<h1>主题酒店</h1>-->
+        <!--<div class="hotel1"></div>-->
+        <!--<div class="hotel2">-->
+            <!--<div class="hotel2_1">jeidian1</div>-->
+            <!--<div class="hotel2_2">jiudian2</div>-->
+        <!--</div>-->
+        <h1 align="center" class="article_title" style="padding-top: 50px">主题酒店</h1>
+        <hr/>
+        <article class="section1_spot">
+            <span>
+                <b style="font-size: 22px;color: #006600">主题酒店</b></span>
+            <div class="fire-spot">
+                <ul class="spot">
+                    <li>
+                        <div class="spot_img">
+                            <img src="./images/hotel1.jpg" alt="苏州万鸟园"/>
+                        </div>
+                        <div class="spot_talk spot_title">
+                            <div class="spot_talk1"><span>Äscher Cliff，瑞士</span></div>
+                            <div class="spot_talk2"><span>再次见面，你好</span></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="spot_img">
+                            <img src="./images/hotel2.jpg" alt="苏州万鸟园"/>
+                        </div>
+                        <div class="spot_talk">
+                            <div class="spot_talk1"><span>卡克斯劳坦恩酒店，芬兰</span></div>
+                            <div class="spot_talk2"><span>再次见面，你好</span></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="spot_img">
+                            <img src="./images/hotel3.jpg" alt="苏州万鸟园"/>
+                        </div>
+                        <div class="spot_talk">
+                            <div class="spot_talk1"><span>岩石磨坊酒店，法国</span></div>
+                            <div class="spot_talk2"><span>再次见面，你好</span></div>
+                        </div>
+                    </li>
+                </ul>
 
-    <!-- 尾部 -->
-    <footer style="margin-top:100px;">
-        <div class="footer1">
-            <a href="#">关于自游</a>
-            <a href="#">合作伙伴</a>
-            <a href="#">免责声明</a>
-            <a href="#">友情链接</a>
-            <a href="#">联系我们</a>
-            <a href="#">自游微博</a>
-        </div><br>
-        <span>自游吧旅游网</span>
-    </footer>
+            </div>
+        </article>
+        <article class="article_right" style="margin-top: -50px">
+            <article class="travelnote">
+                <div class="travelnote_header">
+                    <b style="font-size: 24px;color: #009900">特价酒店</b>
+                    <span>最近更新</span>
+                <span class="writenote">
+                    <a href="hotel.html">举报
+                    <span>查看更多</span></a>
+                </span>
+                </div>
+                <ul class="tra_note">
+                    <li class="note">
+                        <img src="./images/hotel%20(1).jpg" alt="油菜花" width="260px" height="200px"/>
+                        <div class="hotel_txt">
+                            <h2>华清远见大酒店成都分部</h2>
+                            <p>地址：成都武侯区科华北路 <br/>
+                                好评：<span style="color: red">99%</span><br/>
+                                交通位置：酒店坐落于成都市武侯区科华北路99号，紧邻成都市公安局，毗邻川西着名佛教寺院文殊院，
+                                步行可至太平洋百货、位置优越，方便出行。 - 距离地铁一号线文殊院地铁站约200米； - 距离成都火车
+                                北站约2.9公里； - 距离成都火车站约3.3公里； - 距离成都城北客运中心约3.5公里； - 距离成都双流国际机场约20.6公里。
+                            </p>
+                            <div class="noteliu">
+                                <span>by 田埂上的梦</span>
+                                <span>23067/186</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="note">
+                        <img src="./images/hotel%20(2).jpg" alt="油菜花"  width="260px" height="200px"/>
+                        <div class="hotel_txt">
+                            <h2>华清远见大酒店成都分部</h2>
+                            <p>地址：成都武侯区科华北路 <br/>
+                                好评：<span style="color: red">99%</span><br/>
+                                交通位置：酒店坐落于成都市武侯区科华北路99号，紧邻成都市公安局，毗邻川西着名佛教寺院文殊院，
+                                步行可至太平洋百货、位置优越，方便出行。 - 距离地铁一号线文殊院地铁站约200米； - 距离成都火车
+                                北站约2.9公里； - 距离成都火车站约3.3公里； - 距离成都城北客运中心约3.5公里； - 距离成都双流国际机场约20.6公里。
+                            </p>
+                            <div class="noteliu">
+                                <span>by 田埂上的梦</span>
+                                <span>23067/186</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </article>
+    </article>
+</section>
+<!--尾部-->
+<footer>
+    <div class="footer1"><a href="#">关于自游</a><a href="#">合作伙伴</a><a href="#">免责声明</a><a href="#">友情链接</a><a href="#">联系我们</a><a href="#">自游微博</a></div>
+    <br/>
+    <span>自游吧旅游网</span>
+</footer>
 </body>
 </html>

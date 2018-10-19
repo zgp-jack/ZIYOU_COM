@@ -1,0 +1,42 @@
+.photo{
+    width: 1120px;
+    height: 100px;
+    /*background-color: #333;*/
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+.slide_txt{
+    background-color:rgba(255,255,255,0);
+
+    float: right;
+    width: 800px;
+    /*margin-top: 90px;*/
+    margin-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+.star_bg{
+    height: 0;
+}
+.starbg_photo{
+    position: relative;
+    right: 30px;
+    margin-bottom: 50px;
+}
+.note_travel{
+    clear: both;
+    color: #000;
+}
+.section_bottom{
+    clear: both;
+    padding-top: 50px;
+    width: 1120px;
+    color: #000;
+}
+.section_bottom p,span,b,a{
+    color: #000;
+}

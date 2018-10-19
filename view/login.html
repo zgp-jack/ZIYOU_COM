@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自游吧-登录</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        p{
+            font-size: 20px;
+            color: black;
+        }
+        a{
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: green;
+        }
+        .login{
+            padding: 15px 28px;
+             background-image: url("./images/nav_bg.png");
+        }
+        .title{
+            position: relative;
+            top: -75px;
+            left:0;
+        }
+        form{
+            position:relative;
+            top: -50px;
+            left: 0;
+        }
+        .txt{
+            width: 200px;
+            height: 35px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-right:10px
+        }
+        .loginbtn{
+            width:277px;
+            height: 40px;
+            margin-top: 15px;
+            /*border: none;*/
+            color: white;
+            background-color: green;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login_bgm">
+        <div class="login" style="width:290px;height:300px">
+            <a class="title" href="ZIYOU_COM.html"><img src="./images/logo_whote.png" alt="自游吧&#10：回到首页" style="width:200px"></a>
+            <form >
+                <p>登录</p>
+                <input id="username" class="txt" type="text" placeholder="输入手机号/邮箱" size="18"><a href="register.html" >立即注册</a><br>
+                <input id="passwd" class="txt" type="password" placeholder="请输入密码" size="18"><a href="reset.html">修改密码</a><br>
+                <input onclick="btn()" class="loginbtn" type="button" value="登录"><br>
+                <p style="font-size:16px;margin:15px 0;">更多登录方式</p>
+                 <ul>
+                    <li><img src="./images/QQ.png" alt="QQ登录"/></li>
+                    <li><img src="./images/weixin.png" alt="微信登录"/></li>
+                    <li><img src="./images/weibo.png" alt="微博登录"/></li>
+                    <li><img src="./images/renren.png" alt="人人网登录"/></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+        var login_bgm = document.querySelector("#login_bgm");
+        login_bgm.style.backgroundImage = 'url("./images/login_bg.jpg")';
+        login_bgm.style.backgroundRepeat = 'no-repeat';
+        login_bgm.backgroundSize = '100% 100%';
+        login_bgm.style.width = window.innerWidth+'px';
+        login_bgm.style.height = window.innerHeight+'px';
+        var login = document.querySelector(".login");
+        login.style.position = 'relative';
+        login.style.top = window.innerHeight/2-parseInt(login.style.height)/2+'px';
+        login.style.left = window.innerWidth/2-parseInt(login.style.width)/2+"px";
+        window.onresize = function(){
+                login_bgm.style.width = window.innerWidth+'px';
+                login_bgm.style.height = window.innerHeight+'px';
+                login.style.top = window.innerHeight/2-parseInt(login.style.height)/2+'px';
+                login.style.left = window.innerWidth/2-parseInt(login.style.width)/2+"px";
+        }
+        function btn(){
+            var username = document.querySelector("#username");
+            var passwd = document.querySelector("#passwd");
+            $.ajax({
+                url:'loginAction',
+                type:'get',
+                data:{
+                    username:username.value,
+                    passwd:passwd.value
+                },
+                traditional:true,
+                success:function(data){
+                    if(data=='登录成功'){
+                        window.location.href="ZIYOU_COM";
+                    }else{
+                        alert(data);
+                    }
+                }
+            });
+        }
+    </script>
+
+    <a></a>
+</body>
+</html>

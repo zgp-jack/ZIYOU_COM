@@ -1,0 +1,323 @@
+/*头部*/
+.index_header{
+    width: 100%;
+    height: 500px;
+}
+.index_header img{
+    width: 100%;
+}
+.index_head video{
+    margin-top: 70px;
+}
+.header_title{
+    position: relative;
+    top:-300px;
+    left: 200px;
+    width: 400px;
+}
+.header_title h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    width: 400px;
+}
+.header_title .headerindextitle{
+    color: #fff;
+    font-size: 30px;
+    width: 400px;
+}
+.index_header .header_footer{
+    position: relative;
+    top:-175px;
+    width: 100%;
+    height:36px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #000;
+    color: #fff;
+}
+/*内容*/
+section{
+    width: 1120px;
+    margin: 0 auto;
+}
+.article_title{
+    font-size: 30px;
+    color: #006600;
+}
+.article1{
+    /*background-color: yellow;*/
+}
+.article1 .section1_spot{
+    width: 30%;
+    float: left;
+}
+.fire-spot{
+    background-color: #eee;
+}
+.fire-spot .spot{
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.fire-spot .spot li{
+    /*margin:15px 5px;*/
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /*margin-left: -40px;*/
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 4px #888;
+}
+.fire-spot .spot .spot_img img{
+    width: 330px;
+    height: 200px;
+}
+.spot_talk{
+    background-color: rgba(10,10,10,0.4);
+    position: relative;
+    line-height: 30px;
+    width: 100%;
+    top:-62px;
+}
+.spot_talk span{
+    color: #fff;
+    margin-left: 20px;
+}
+.spot_explain{
+    position: relative;
+    top:-44px;
+    left: 20px;
+}
+.article_right{
+    width: 67%;
+    float:left;
+    margin-left: 30px;
+}
+.article1 .article_right .section1_zyxing{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 200px;
+    box-shadow: 2px 4px 4px #888;
+}
+.article1 .article_right .section1_zyxing img{
+   width: 320px;
+}
+.barrage{
+    width: 320px;
+    height: 50px;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    /*opacity: 0.4;*/
+    position: relative;
+    /*left:-30px;*/
+    top:-52px;
+}
+.zyxing_message{
+    clear: both;
+    float: right;
+    margin-top: -234px;
+    margin-right: 80px;
+}
+
+.travelnote{
+    clear: both;
+    margin-top: 30px;
+    background-color: #fff;
+}
+.travelnote .tra_note{
+    padding: 0;
+    margin: 0;
+}
+.tra_note li{
+    display: inline-block;
+    float: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.travelnote_header{
+    line-height: 60px;
+    /*height: 60px;*/
+    margin-left: 30px;
+}
+.travelnote_header .writenote{
+    float: right;
+    margin-right: 50px;
+}
+.travelnote_header .writenote span{
+    background-color: #009900;
+    color: #fff;
+    font-size: 22px;
+}
+.note{
+    background-color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.travelnote .note img{
+    float: left;
+    padding-top: 20px;
+    opacity: 0.8;
+}
+.travelnote .note img:hover{
+    opacity: 1;
+}
+.note .note1{
+    float: left;
+    padding-left: 30px;
+    margin-top: 20px;
+    width: 450px;
+}
+.note .note1 img{
+    margin-top: -20px;
+}
+.tra_note li:hover{
+    background-color: #66CC99;
+}
+.noteliu{
+    margin-top: 20px;
+}
+/*目的地攻略*/
+.destination{
+    clear: both;
+}
+.destination .des_season{
+    clear:both;
+    float: left;
+    height: 360px;
+    box-shadow: 2px 4px 4px #888;
+}
+.destination .des_season4{
+    float: left;
+    margin-left:7px;
+    height: 359px;
+    width: 35%;
+    background-color: #fff;
+}
+.destination .des_season4 .des_season4_1{
+    float: left;
+}
+.destination .des_season4 img{
+    width: 180px;
+    margin: 5px;
+}
+.des_path{
+    width: 100%;
+    background-color: #fff;
+    height:80px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+.des_season4_1 .img_txt{
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background-color: rgba(21,21,21,0.2);
+    position: relative;
+    top:-110px;
+    left:40px;
+}
+.img_txt:hover{
+    background-color: rgba(21,21,21,0.8);
+}
+.img_txt:hover.img_txt1{
+    display: block;
+}
+.img_txt1{
+    /*background-color: #fff;*/
+    clear: both;
+    position: relative;
+    background-color: #009900;
+    left: -35px;
+    top: 26px;
+    width: 180px;
+    color: #fff;
+    display: none;
+}
+.destination .des_table{
+    background-color: #fff;
+    width: 28%;
+    height: 359px;
+    color: #fff;
+    float: right;
+    box-shadow: 2px 4px 4px #888;
+}
+.des_table table td a{
+    color: #000;
+}
+.des_table table td a:hover{
+    color: #009900;
+}
+.des_table img{
+    width: 100px;
+
+}
+/*周末游*/
+.weekTra{
+    clear: both;
+    margin: 0 auto;
+}
+.weekTra .article_title3{
+    padding: 0;
+    margin: 0;
+}
+.weekTra .article_title3 li{
+    width: 31%;
+    margin: 13px;
+    float: left;
+    height: 360px;
+    box-shadow: 2px 4px 4px #888;
+}
+.weekTra .article_title3 li img{
+    width: 100%;
+}
+.weekTra .weekTra_food{
+    background-color: #f25d8e;
+    width: 320px;
+    height:100px;
+    clear:both;
+    float: left;
+}
+.weekTra .weekTra_incity{
+    background-color: #f58314;
+    width: 320px;
+    height:100px;
+    float: left;
+}
+.weekTra .weekTra_outcity{
+    background-color: #15d6ba;
+    width: 320px;
+    height:100px;
+    float: right;
+}
+.weekTra .spot_talk{
+    height: 280px;
+    margin-top: -270px;
+    text-align: center;
+    line-height: 280px;
+    background-color: rgba(255,255,255,0.1);
+}
+.spot_talk:hover{
+    background-color: rgba(25,25,25,0.7);
+}
+.weekTra .spot_talk h1{
+    font-size: 50px;
+    color: #009900;
+}
+/*主题酒店*/
+.hotel{
+    clear: both;
+}
+.hotel .spot li{
+    height: 200px;
+}
+.hotel_txt{
+    width: 410px;
+    float: left;
+    padding-left: 30px;
+    margin-top: 20px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自游吧-重置密码</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .regist{
+            background-image: url("./images/nav_bg1.png");
+            padding-left: 30px;
+        }
+        form{
+            padding-top:45px;
+        }
+        .title{
+            position: absolute;
+            top: -70px;
+            left:0;
+        }
+        .txt{
+            width: 245px;
+            height: 35px;
+            padding-left: 5px;
+            margin-top: 0px;
+            margin-right:10px
+        }
+        input{
+            margin-bottom:15px;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div id="register_bgm">
+        <div class="regist" style="width:350px;height:400px;">
+            <a class="title" href="ZIYOU_COM.html"><img src="./images/logo_whote.png" alt="自游吧&#10;回到首页"/></a>
+            <form >
+                <h1 style="font-size: 22px;margin-bottom:5px">注册</h1>
+                <input id="username" class="txt" type="text" placeholder="输入手机号/邮箱" size="22" class="in"/>
+                <br/>
+                <input id="passwd" class="txt" type="password" placeholder="密码" size="18" class="in"/><br/>
+                <input id="repasswd" class="txt" type="password" placeholder="确认密码" size="18" class="in"/><br/>
+                <!-- <input id="checked" type="checkbox" name="n" /><span>我同意</span><a href="#" style="color: #009900">《自游吧使用协议》</a><br/> -->
+                <!-- <a href="login.html" style="font-size: 16px;">立即登录</a><br/> -->
+                <input onclick="btn()" type="button" value="提交" style="width: 258px;height: 40px;background-color: #007700;color: #fff;border-radius: 5px;margin-top:15px"/>
+            </form>
+        </div>
+    </div>
+    <script>
+         var login_bgm = document.querySelector("#register_bgm");
+        login_bgm.style.backgroundImage = 'url("./images/register_bg.jpg")';
+        login_bgm.style.backgroundRepeat = 'no-repeat';
+        login_bgm.style.width = window.innerWidth+'px';
+        console.log(login_bgm.style.width);
+        login_bgm.style.height = window.innerHeight+'px';
+        login_bgm.backgroundSize = '100% 100%';
+        var login = document.querySelector(".regist");
+        login.style.position = 'relative';
+        login.style.top = window.innerHeight/2-parseInt(login.style.height)/2+'px';
+        login.style.left = window.innerWidth/2-parseInt(login.style.width)/2+"px";
+        window.onresize = function(){
+                login_bgm.style.width = window.innerWidth+'px';
+                login_bgm.style.height = window.innerHeight+'px';
+                login.style.top = window.innerHeight/2-parseInt(login.style.height)/2+'px';
+                login.style.left = window.innerWidth/2-parseInt(login.style.width)/2+"px";
+        }
+        function btn(){
+            var username = document.querySelector("#username");
+            var passwd = document.querySelector("#passwd");
+            var repasswd = document.querySelector("#repasswd");
+            var check = document.querySelector("#checked");
+            if(!username.value){
+                alert("用户名不能为空！");
+            }else if(!passwd.value){
+                alert("密码不能为空！");
+            }else if(repasswd.value!=passwd.value){
+                alert("密码不一致！");
+            }else{
+                var infor = "username="+username.value+"&&passwd=" + passwd.value;
+                var ajax = new XMLHttpRequest();
+                ajax.onreadystatechange=function(){
+                    if(ajax.readyState==4&&ajax.status==200){
+                        if(ajax.responseText=="修改成功"){
+                            window.location.href="login";
+                        }else{
+                             alert(ajax.responseText);
+                        }
+                    }
+                }
+                ajax.open("get","resetAction?"+infor,true);
+                ajax.send();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+.weekTra_header{
+    margin-top: 70px;
+}
+.weekTra_header img{
+    width: 100%;
+}
+.nav_col{
+    background-color: #ddd;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top:300px;
+    left: 20px;
+}
+.nav_col li{
+    height: 50px;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: -2px 3px 2px #333;
+    border-bottom: 1px solid #eee;
+}
+.nav_col li a{
+    color: #000;
+    line-height: 50px;
+    width: 120px;
+}
+.nav_col li a:hover{
+    color: #fff;
+}
+.nav_col li:hover{
+    background-color: #009900;
+}
+.findfood{
+    width: 1002px;
+}
+.food,.incity, .outcity{
+    clear: both;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.outcity{
+    height: 490px;
+}
+.findfood ul{
+    margin: 0;
+    padding: 0;
+}
+.findfood ul li{
+    width: 300px;
+    padding: 2px;
+    height: 336px;
+    float: left;
+    margin-left: 26px;
+    box-shadow: 4px 4px 4px #999;
+}
+/*.margin_left{*/
+    /*margin-left: 30px;*/
+/*}*/
+.findfood ul img{
+    width: 300px;
+    height: 260px;
+    transition: width,height;
+}
+.findfood ul img:hover{
+    width: 320px;
+    height: 280px;
+}
+.findfood .spot_talk{
+    margin-top:-220px;
+    height: 260px;
+    background-color: rgba(255,255,255,0.1);
+}
+.findfood .spot_talk:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+.a_right{
+    float: right;
+    margin-right: 30px;
+}
